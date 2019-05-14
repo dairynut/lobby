@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div class="chatContainer">
+        <div class="messageDisplayList">
+            <ul id="messagesList"></ul>
+        </div>
+        <hr/>
+        <div id="userField">
+            <h6>Username:</h6>
+            <input type="text" id="userInput" />
+            <input type="button" id="confirmName" value="Confirm" />
+        </div>
+        <div id="messageInputField" class="hidden">
+            <h6>Message:</h6>
+            <input type="text" id="messageInput" />
+            <input type="button" id="sendButton" value="Send" />
+        </div>
+    </div>
+
+<script src="~/lib/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/lobby.chat-0.1.js"></script>
+<script src="~/js/jquery-3.4.1.js"></script>
